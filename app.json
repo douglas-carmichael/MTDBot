@@ -1,0 +1,26 @@
+{
+  "name": "MTDBot",
+  "description": "Node.js bot to enable Slack users to get CUMTD API bus information",
+  "repository": "https://git.ncsa.illinois.edu/dcarmich/MTDBot.git",
+  "keywords": ["slack", "bots", "mtdbot", "cumtd", "bus"],
+  "website": "https://git.ncsa.illinois.edu/dcarmich/MTDBot.git",
+  "success_url":"/",
+  "addons":[
+    {
+      "plan": "mongolab",
+      "as": "MONGO"
+    }
+  ],
+  "env": {
+      "clientId": {
+          "description": "Client ID provided by Slack"
+      },
+      "clientSecret": {
+          "description": "Client Secret provided by Slack"
+      },
+      "studio_token": {
+          "description": "Token associated with your bot in Botkit Studio",
+          "required":false
+      }
+  }
+}
